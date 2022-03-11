@@ -1,8 +1,19 @@
+import Link from 'next/link'
 import React from 'react'
+import { Post } from "../typings";
+
+interface Props {
+  posts: [Post];
+}
 
 function Posts() {
   return (
-    <div>Posts</div>
+    <div>
+      {posts.map(post => (
+        <Link key={post.} >
+        </Link>
+      ))}
+    </div>
   )
 }
 
