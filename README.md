@@ -1,27 +1,23 @@
-# Next.js + Tailwind CSS Example
+## Medium Clone w/ NextJS, TS, Tailwind, & Sanity
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+First real shot at building a fullstack application using CRUD operations to update and fetch from remote storage. Using TypeScript and a full backend in a project was a lot of fun. Did have to fix some breaking changes within some pf Sanity's tooling
+Built to practice developing Next.js apps using 3rd-party API plugins and responsive design tools like Chakra UI. Certain comments were left in the code as a reminder of my troubleshooting efforts/experimentation, while others indicate innovations I made over the original project from 
 
-## Preview
+## Tech Used & Learning Takeaways
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+Tech: Next.js/ISR, Sanity.io, TailwindCSS, React Hook Forms, TypeScript
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+Takeaways: 
+Documentation research and integration of 3rd-party API endpoints, component & module libraries, building, using async data-fetching in Next.js, using optional-chaining methods(?.) and other es6+ conditionals to render and execute code,
 
-## Deploy your own
+## Why I Built This Project
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+This project is intended as a learning experience for assembling and properly styling a NextJS app using a styled React component library (ChakraUI) and doing a thorough documentation dive into new tools: Chakra UI, Next.js, and the Bayut API endpoint details retrieved from an axios GET request with RapidAPI.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## How the File Structure is Setup
 
-## How to use
+This project was created using the standard npx create-next-app command. There are two kinds of react component folders ( components and containers ) with each containing a folder for the jsx component listed and its corresponding css file. 
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+## Improvements to be Made With More Time/Experience
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+The site design is still using medium branded images and is accessing them via url paths from a content creator's site. They should be substituted with local Assets. The [slug].tsx file is roughly 250 lines an is in need of being componentized.
